@@ -6,16 +6,13 @@
 /*   By: cdelfa-m <cdelfa-m@student.42Bareclon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 17:33:27 by cdelfa-m          #+#    #+#             */
-/*   Updated: 2024/10/07 17:40:13 by cdelfa-m         ###   ########.fr       */
+/*   Updated: 2024/10/22 19:27:18 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {
-	int	i;
-
-	i = 0;
 	while (*s)
 	{
 		if (*s == c)
