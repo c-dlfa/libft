@@ -9,6 +9,7 @@
 /*   Updated: 2024/10/07 16:38:49 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

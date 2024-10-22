@@ -9,14 +9,15 @@
 /*   Updated: 2024/10/07 16:07:04 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-size_t	ft_strlen(char *c)
+#include "libft.h"
+
+size_t	ft_strlen(const char *c)
 {
 	size_t	count;
 
 	count = 0;
-	while (*c != '\0')
+	while (c[count] != '\0')
 	{
-		*c++;
 		count++;
 	}
 	return (count);

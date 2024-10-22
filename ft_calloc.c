@@ -9,7 +9,6 @@
 /*   Updated: 2024/10/22 16:21:16 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 void	*ft_calloc(size_t nelem, size_t elsize)
@@ -20,7 +19,7 @@ void	*ft_calloc(size_t nelem, size_t elsize)
 		return (NULL);
 	allocated = malloc (nelem * elsize);
 	if (!(allocated))
-		return (arr);
-	ft_bzero (allocated, (nelem * elsize));
+		return (allocated);
+	ft_bzero(allocated, (nelem * elsize));
 	return ((void *)allocated);
 }

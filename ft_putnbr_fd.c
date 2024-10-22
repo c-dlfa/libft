@@ -13,11 +13,11 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	s[13];
+	char	*s;
 	int		i;
 
 	i = 0;
 	s = ft_itoa(n);
 	while (ft_isdigit(s[i]) || s[i] == '-')
-		ft_putchar(s[i++], fd);
+		ft_putchar_fd(s[i++], fd);
 }

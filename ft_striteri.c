@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cdelfa-m <cdelfa-m@student.42Bareclon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/07 16:22:53 by cdelfa-m          #+#    #+#             */
-/*   Updated: 2024/10/07 16:25:41 by cdelfa-m         ###   ########.fr       */
+/*   Created: 2024/10/16 20:54:32 by cdelfa-m          #+#    #+#             */
+/*   Updated: 2024/10/16 20:59:16 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned char		*local_dest;
-	unsigned const char	*local_src;
+	int	i;
 
-	local_dest = (unsigned char *)dest;
-	local_src = (const unsigned char *)src;
-	while (n-- > 0)
+	i = 0;
+	while (s[i] != '\0')
 	{
-		*local_dest++ = *local_src++;
+		f(i, &s[i]);
+		i++;
 	}
-	return (dest);
 }

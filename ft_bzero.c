@@ -9,11 +9,12 @@
 /*   Updated: 2024/10/07 16:20:17 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
-	int				i;
+	size_t			i;
 
 	i = 0;
 	ptr = s;

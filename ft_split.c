@@ -51,12 +51,12 @@ char	**ft_split(char const *s, char c)
 	i = 0;
 	j = 0;
 	size = ft_strlen(s);
-	split = ft_calloc((ft_word_counter(s, c) + 1), sizeof(char));
+	split = ft_calloc((ft_word_counter((char *)s, c) + 1), sizeof(char));
 	while (s[i] != '\0')
 	{
 		while (s[i] == c)
 			i++;
-		split[j] = ft_calloc(ft_char_counter(s, c) + 1, sizeof(char));
+		split[j] = ft_calloc(ft_char_counter((char *)s, c) + 1, sizeof(char));
 		while (s[i] != c && s[i] != '\0')
 			split[j][k++] = s[i++];
 		split[j++][k] = '\0';

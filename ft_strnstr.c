@@ -9,19 +9,19 @@
 /*   Updated: 2024/10/16 20:06:51 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
+#include "libft.h"
 
-char	*strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	char	*first_ocurrence;
-	int		i;
+	size_t	i;
 
-	i = 0;
+	i = 0 + len - len;
 	if (!little)
-		return (big);
+		return ((char *)big);
 	while (big[i] != '\0')
 	{
-		first_ocurrence = &big[i];
+		first_ocurrence = (char *)&big[i];
 		while (big[i] == little[i])
 		{
 			if (little[(i + 1)] == '\0')

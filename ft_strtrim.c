@@ -9,6 +9,8 @@
 /*   Updated: 2024/10/07 16:51:30 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	int		start;
@@ -18,7 +20,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	start = 0;
-	end = strlen(s1) - 1;
+	end = ft_strlen(s1) - 1;
 	while (ft_strchr(set, s1[start]) != NULL)
 		start++;
 	while (ft_strchr(set, s1[end]) != NULL)

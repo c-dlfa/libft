@@ -9,6 +9,7 @@
 /*   Updated: 2024/10/07 16:26:25 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

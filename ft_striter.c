@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striter.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cdelfa-m <cdelfa-m@student.42Bareclon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -17,5 +17,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 	i = -1;
 	while (s[i++] != '\0')
-		s[i] = f(i, &s[i]);
+		s[i] = (char)f(i, &s[i]);
 }

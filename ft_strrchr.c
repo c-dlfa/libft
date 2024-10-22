@@ -6,10 +6,10 @@
 /*   By: cdelfa-m <cdelfa-m@student.42Bareclon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 17:35:41 by cdelfa-m          #+#    #+#             */
-/*   Updated: 2024/10/07 17:39:52 by cdelfa-m         ###   ########.fr       */
+/*   Updated: 2024/10/22 18:24:25 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stido.h>
+#include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
