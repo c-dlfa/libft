@@ -6,7 +6,7 @@
 /*   By: cdelfa-m <cdelfa-m@student.42Bareclon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:02:56 by cdelfa-m          #+#    #+#             */
-/*   Updated: 2024/10/16 17:10:49 by cdelfa-m         ###   ########.fr       */
+/*   Updated: 2024/10/22 19:29:12 by cdelfa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -42,7 +42,6 @@ int	ft_char_counter(char *s, char c)
 char	**ft_split(char const *s, char c)
 {
 	char	**split;
-	int		size;
 	int		i;
 	int		j;
 	int		k;
@@ -50,7 +49,6 @@ char	**ft_split(char const *s, char c)
 	k = 0;
 	i = 0;
 	j = 0;
-	size = ft_strlen(s);
 	split = ft_calloc((ft_word_counter((char *)s, c) + 1), sizeof(char));
 	while (s[i] != '\0')
 	{
